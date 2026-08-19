@@ -1,0 +1,202 @@
+.testimonials {
+  padding: 7rem 2rem;
+  background: transparent;
+  position: relative;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 140, 0, 0.1));
+  color: #d4a017;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #0a0f1e;
+}
+
+.gold {
+  background: linear-gradient(135deg, #d4a017, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.carousel {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.1s;
+  position: relative;
+}
+
+.quoteIcon {
+  font-size: 5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: Georgia, serif;
+  margin-bottom: -1rem;
+}
+
+.slideContent {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteText {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.9;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-style: italic;
+}
+
+.stars {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.quoteName {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0a0f1e;
+  margin: 0 0 0.3rem;
+}
+
+.quoteRole {
+  font-size: 0.85rem;
+  color: #d4a017;
+  font-weight: 600;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeDot {
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+}
+
+.miniCards {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.3s;
+}
+
+.miniCard {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  background: white;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.miniCard:hover {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.activeMini {
+  border-color: #ffd700;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 140, 0, 0.05));
+}
+
+.miniAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.7rem;
+  color: #0a0f1e;
+  flex-shrink: 0;
+}
+
+.miniCard h5 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0a0f1e;
+  margin: 0;
+}
+
+.miniCard span {
+  font-size: 0.65rem;
+  color: #999;
+}
+
+.visible[data-animate] {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    padding: 2rem 1.5rem;
+  }
+  .miniCards {
+    display: none;
+  }
+}
