@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-
 import styles from './Results.module.css';
 
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {

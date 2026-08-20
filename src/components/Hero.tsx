@@ -3,8 +3,6 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 
-
-
 const PARTICLES = [
   { left: '5%', delay: '0.2s', duration: '4.5s' },
   { left: '12%', delay: '1.5s', duration: '6s' },
