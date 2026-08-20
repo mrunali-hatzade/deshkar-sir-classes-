@@ -49,7 +49,7 @@ export default function CropHelperPage() {
         const g = pixels[i + 1];
         const b = pixels[i + 2];
 
-        if (isGraphicBlue(r, g, b)) {
+        if (isTargetBlue(r, g, b)) {
           if (x < minX) minX = x;
           if (x > maxX) maxX = x;
           if (y < minY) minY = y;
