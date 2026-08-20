@@ -1,6 +1,6 @@
 .courses {
   padding: 7rem 2rem;
-  background: #0a0f1e;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@
 .title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
-  color: white;
+  color: #1a1a2e;
   margin-bottom: 1rem;
 }
 
@@ -58,7 +58,7 @@
 
 .desc {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.55);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
@@ -73,8 +73,9 @@
 .card {
   position: relative;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -85,7 +86,7 @@
 .card:hover {
   transform: translateY(-8px) !important;
   border-color: rgba(255, 215, 0, 0.2);
-  background: rgba(255, 255, 255, 0.06);
+  background: #ffffff;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
@@ -124,7 +125,7 @@
 .cardTitle {
   font-size: 1.3rem;
   font-weight: 800;
-  color: white;
+  color: #1a1a2e;
   margin-bottom: 0.5rem;
 }
 
@@ -142,7 +143,7 @@
 
 .cardPricePeriod {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .cardMeta {
@@ -153,12 +154,12 @@
 
 .cardMeta span {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.45);
 }
 
 .cardDesc {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(0, 0, 0, 0.5);
   line-height: 1.6;
   margin-bottom: 1.2rem;
 }
@@ -171,7 +172,7 @@
 
 .cardFeatures li {
   font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.55);
   padding: 0.3rem 0;
   display: flex;
   align-items: center;
@@ -190,7 +191,7 @@
   text-align: center;
   padding: 0.75rem 1.5rem;
   border-radius: 12px;
-  color: #0a0f1e;
+  color: #1a1a2e;
   font-weight: 700;
   font-size: 0.9rem;
   text-decoration: none;

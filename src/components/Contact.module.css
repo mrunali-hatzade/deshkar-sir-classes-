@@ -1,6 +1,6 @@
 .contact {
   padding: 7rem 2rem;
-  background: #0a0f1e;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -13,7 +13,7 @@
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.06), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.08), transparent 70%);
   pointer-events: none;
 }
 
@@ -52,7 +52,7 @@
 .title {
   font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 900;
-  color: white;
+  color: #1a1a2e;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -66,7 +66,7 @@
 
 .desc {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.55);
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -81,14 +81,15 @@
   display: flex;
   gap: 1rem;
   padding: 1.2rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.07);
   border-radius: 16px;
   transition: all 0.3s ease;
 }
 
 .infoCard:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #ffffff;
   border-color: rgba(255, 215, 0, 0.15);
 }
 
@@ -100,13 +101,13 @@
 .infoCard h4 {
   font-size: 0.9rem;
   font-weight: 700;
-  color: white;
+  color: #1a1a2e;
   margin: 0 0 0.3rem;
 }
 
 .infoCard p {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.45);
   margin: 0;
   line-height: 1.5;
 }
@@ -119,8 +120,9 @@
 
 .form {
   padding: 2.5rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 24px;
   backdrop-filter: blur(20px);
 }
@@ -128,7 +130,7 @@
 .form h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: white;
+  color: #1a1a2e;
   margin: 0 0 1.5rem;
   text-align: center;
 }
@@ -152,7 +154,7 @@
 .inputGroup label {
   font-size: 0.8rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.55);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -161,10 +163,10 @@
 .inputGroup select,
 .inputGroup textarea {
   padding: 0.9rem 1.2rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #f5f6fa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  color: white;
+  color: #1a1a2e;
   font-size: 0.95rem;
   font-family: inherit;
   transition: all 0.3s ease;
@@ -173,14 +175,14 @@
 
 .inputGroup input::placeholder,
 .inputGroup textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.35);
 }
 
 .inputGroup input:focus,
 .inputGroup select:focus,
 .inputGroup textarea:focus {
   border-color: rgba(255, 215, 0, 0.5);
-  background: rgba(255, 255, 255, 0.08);
+  background: #ffffff;
   box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
 }
 
@@ -189,8 +191,8 @@
 }
 
 .inputGroup select option {
-  background: #1a1f35;
-  color: white;
+  background: #ffffff;
+  color: #1a1a2e;
 }
 
 .inputGroup textarea {
@@ -203,7 +205,7 @@
   margin-top: 1.5rem;
   padding: 1rem;
   background: linear-gradient(135deg, #ffd700, #ff8c00);
-  color: #0a0f1e;
+  color: #1a1a2e;
   font-weight: 800;
   font-size: 1.05rem;
   border: none;
@@ -222,27 +224,28 @@
   text-align: center;
   margin-top: 1rem;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .mapSection {
   margin-top: 2rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   transition: all 0.3s ease;
 }
 
 .mapSection:hover {
   border-color: rgba(255, 215, 0, 0.15);
-  background: rgba(255, 255, 255, 0.06);
+  background: #ffffff;
 }
 
 .mapTitle {
   font-size: 1.1rem;
   font-weight: 700;
-  color: white;
+  color: #1a1a2e;
   margin: 0 0 1rem;
 }
 
@@ -264,7 +267,7 @@
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
   background: linear-gradient(135deg, #ffd700, #ff8c00);
-  color: #0a0f1e;
+  color: #1a1a2e;
   font-weight: 700;
   font-size: 0.9rem;
   border: none;

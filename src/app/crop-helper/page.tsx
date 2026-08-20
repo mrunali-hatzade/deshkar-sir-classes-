@@ -137,7 +137,7 @@ export default function CropHelperPage() {
   };
 
   return (
-    <main style={{ minHeight: '100vh', background: '#0a0f1e', color: 'white', padding: '100px 2rem 2rem 2rem' }}>
+    <main style={{ minHeight: '100vh', background: '#ffffff', color: '#1a1a2e', padding: '100px 2rem 2rem 2rem' }}>
       <Navbar />
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <h1>Teacher Image Cropping Helper</h1>
@@ -152,8 +152,8 @@ export default function CropHelperPage() {
               onClick={() => setSelectedImage(imgName)}
               style={{
                 padding: '0.8rem 1.5rem',
-                background: selectedImage === imgName ? '#ffd700' : 'rgba(255,255,255,0.05)',
-                color: selectedImage === imgName ? '#0a0f1e' : 'white',
+                background: selectedImage === imgName ? '#ffd700' : 'rgba(0,0,0,0.05)',
+                color: '#1a1a2e',
                 border: 'none',
                 borderRadius: '8px',
                 fontWeight: 'bold',
@@ -181,7 +181,7 @@ export default function CropHelperPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
           {/* Left: Source Image */}
-          <div style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '12px' }}>
+          <div style={{ background: '#f5f6fa', padding: '1rem', borderRadius: '12px' }}>
             <h3>Source Screenshot</h3>
             <div style={{ position: 'relative', overflow: 'auto', maxHeight: '500px' }}>
               <img
@@ -195,7 +195,7 @@ export default function CropHelperPage() {
           </div>
 
           {/* Right: Crop Controls & Preview */}
-          <div style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '12px', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ background: '#f5f6fa', padding: '1rem', borderRadius: '12px', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3>Crop Preview & Controls</h3>
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
@@ -245,7 +245,7 @@ export default function CropHelperPage() {
               </label>
             </div>
 
-            <div style={{ border: '2px solid rgba(255,215,0,0.3)', padding: '0.5rem', display: 'inline-block', alignSelf: 'center', background: '#0a0f1e' }}>
+            <div style={{ border: '2px solid rgba(255,215,0,0.3)', padding: '0.5rem', display: 'inline-block', alignSelf: 'center', background: '#ffffff' }}>
               <canvas ref={canvasRef} style={{ display: 'block', maxWidth: '300px', height: 'auto' }} />
             </div>
 
@@ -254,7 +254,7 @@ export default function CropHelperPage() {
               style={{
                 padding: '1rem',
                 background: 'linear-gradient(135deg, #ffd700 0%, #ff8c00 100%)',
-                color: '#0a0f1e',
+                color: '#1a1a2e',
                 border: 'none',
                 borderRadius: '8px',
                 fontWeight: 'bold',
@@ -266,7 +266,7 @@ export default function CropHelperPage() {
             </button>
 
             {status && (
-              <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px', color: '#ffd700', fontWeight: 'bold' }}>
+              <div style={{ background: 'rgba(0,0,0,0.05)', padding: '1rem', borderRadius: '8px', color: '#ffd700', fontWeight: 'bold' }}>
                 {status}
               </div>
             )}

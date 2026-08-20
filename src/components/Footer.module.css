@@ -1,6 +1,6 @@
 .footer {
-  background: #0a0f1e;
-  color: rgba(255, 255, 255, 0.8);
+  background: #f5f6fa;
+  color: rgba(0, 0, 0, 0.75);
   position: relative;
   overflow: hidden;
 }
@@ -62,7 +62,7 @@
 }
 
 .col ul li a {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
@@ -88,7 +88,7 @@
 .brand h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #fff, #ffd700);
+  background: linear-gradient(135deg, #1a1a2e, #ffd700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -114,8 +114,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a1a2e;
   text-decoration: none;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -136,7 +137,7 @@
 .bottom {
   margin-top: 3rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
