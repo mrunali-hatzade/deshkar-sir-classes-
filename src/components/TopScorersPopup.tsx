@@ -20,15 +20,25 @@ export default function TopScorersPopup() {
     return () => window.removeEventListener('openTopScorers', handleOpen);
   }, []);
 
+  // Lock body scroll when popup is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
-    <div className={styles.overlay}>
-      <div className={styles.modal}>
-        <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>×</button>
+    <div className={styles.overlay} onClick={() => setIsOpen(false)}>
+      <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+        <button className={styles.closeBtn} onClick={() => setIsOpen(false)} aria-label="Close popup">×</button>
         <div className={styles.header}>
           <h2>🏆 Our Physics Top Scorers 🏆</h2>
-          <p>Inspiring excellence in JEE & NEET</p>
+          <p>Inspiring excellence in JEE &amp; NEET</p>
         </div>
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -76,6 +86,9 @@ export default function TopScorersPopup() {
         </div>
         <button className={styles.ctaBtn} onClick={() => { setIsOpen(false); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
           Join the League
+        </button>
+        <button className={styles.closeBtnBottom} onClick={() => setIsOpen(false)}>
+          ✕ Close
         </button>
       </div>
     </div>
