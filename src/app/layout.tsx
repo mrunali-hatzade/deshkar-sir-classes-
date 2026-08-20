@@ -49,21 +49,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "United Classes | Premier Coaching Institute for IIT-JEE, NEET & Board Exams",
+  title: "Deshkar Sir's Classes | Premier Coaching Institute for IIT-JEE, NEET & Board Exams",
   description:
-    "United Classes is a top-rated coaching institute offering expert preparation for IIT-JEE, NEET, Board Exams, Foundation Courses & Olympiad Training. 15+ years of excellence with 95% success rate. Join India's most trusted coaching today.",
+    "Deshkar Sir's Classes is a top-rated coaching institute offering expert preparation for IIT-JEE, NEET, Board Exams, Foundation Courses & Olympiad Training. 15+ years of excellence with 95% success rate. Join today.",
   keywords: [
     "coaching institute",
     "IIT-JEE coaching",
     "NEET coaching",
     "board exam preparation",
-    "United Classes",
-    "best coaching",
+    "Deshkar Sir's Classes",
+    "Deshkar Sir Classes",
+    "best coaching Bhandara",
     "foundation course",
     "olympiad training",
   ],
   openGraph: {
-    title: "United Classes | Excellence in Education",
+    title: "Deshkar Sir's Classes | Excellence in Education",
     description:
       "Premier coaching for IIT-JEE, NEET & Board Exams. Expert faculty, proven results, and 15+ years of academic excellence.",
     type: "website",

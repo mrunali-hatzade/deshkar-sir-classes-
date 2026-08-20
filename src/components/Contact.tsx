@@ -66,7 +66,7 @@ export default function Contact() {
                 <span className={styles.infoIcon}>📍</span>
                 <div>
                   <h4>Visit Us</h4>
-                  <p>United Classes, Bhandara</p>
+                  <p>Deshkar Sir&apos;s Classes, Bhandara</p>
                 </div>
               </div>
               <div className={styles.infoCard}>
@@ -80,7 +80,7 @@ export default function Contact() {
                 <span className={styles.infoIcon}>✉️</span>
                 <div>
                   <h4>Email Us</h4>
-                  <p>info@unitedclasses.edu<br/>admissions@unitedclasses.edu</p>
+                  <p>info@deshkarsirclasses.com<br/>admissions@deshkarsirclasses.com</p>
                 </div>
               </div>
               <div className={styles.infoCard}>

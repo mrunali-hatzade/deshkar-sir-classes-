@@ -13,7 +13,7 @@ export default function Footer() {
           <div className={styles.col}>
             <div className={styles.brand}>
               <span className={styles.brandIcon}>🎓</span>
-              <h3>United Classes</h3>
+              <h3>Deshkar Sir&apos;s Classes</h3>
             </div>
             <p className={styles.desc}>
               Empowering students to achieve academic excellence since 2010. 
@@ -52,16 +52,16 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Contact Info</h4>
             <ul className={styles.contactList}>
-              <li>📍 United Classes, Bhandara</li>
+              <li>📍 Deshkar Sir&apos;s Classes, Bhandara</li>
               <li>📞 +91 9623896600</li>
-              <li>✉️ info@unitedclasses.edu</li>
+              <li>✉️ info@deshkarsirclasses.com</li>
               <li>⏰ Mon - Sat: 7:00 AM - 9:00 PM</li>
             </ul>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <p>© 2024 United Classes. All Rights Reserved. | Designed with ❤️ for Education</p>
+          <p>© {new Date().getFullYear()} Deshkar Sir&apos;s Classes. All Rights Reserved. | Designed with ❤️ for Education</p>
         </div>
       </div>
     </footer>

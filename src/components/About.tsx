@@ -41,7 +41,7 @@ export default function About() {
             <div className={styles.imageWrapper}>
               <Image
                 src="/images/students-studying.png"
-                alt="Students at United Classes"
+                alt="Students at Deshkar Sir's Classes"
                 width={550}
                 height={400}
                 className={styles.mainImage}
@@ -56,11 +56,11 @@ export default function About() {
           <div className={styles.contentCol}>
             <div className={styles.sectionTag} data-animate>About Us</div>
             <h2 className={styles.sectionTitle} data-animate>
-              Why <span className={styles.gold}>United Classes</span> is the 
+              Why <span className={styles.gold}>Deshkar Sir&apos;s Classes</span> is the 
               Right Choice?
             </h2>
             <p className={styles.sectionDesc} data-animate>
-              At United Classes, we believe mastering Physics is the key to cracking competitive exams. 
+              At Deshkar Sir&apos;s Classes, we believe mastering Physics is the key to cracking competitive exams. 
               Our unique teaching methodology combines deep conceptual clarity with rigorous 
               problem-solving practice, ensuring our students don&apos;t just memorize formulas — they understand them deeply.
             </p>

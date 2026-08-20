@@ -36,10 +36,10 @@ export default function CropHelperPage() {
     let maxY = 0;
     let found = false;
 
-    // Saturated blue check for the United Classes graphic
-    const isGraphicBlue = (r: number, g: number, b: number) => {
-      // United Classes blue is deep and saturated (e.g. RGB 0, 80, 157 or similar)
-      return r < 70 && g > 60 && g < 180 && b > 140;
+    // Saturated blue check for the Deshkar Sir's Classes graphic
+    const isTargetBlue = (r: number, g: number, b: number) => {
+      // Deshkar Sir's Classes blue is deep and saturated (e.g. RGB 0, 80, 157 or similar)
+      return b > 100 && b > r * 1.3 && b > g * 1.1;
     };
 
     for (let y = 0; y < tempCanvas.height; y += 4) {
@@ -71,7 +71,7 @@ export default function CropHelperPage() {
       const height = Math.round(gHeight * 0.55);
 
       setCropParams({ x, y, width, height });
-      setStatus('United Classes graphic detected automatically! Adjust sliders if needed.');
+      setStatus("Deshkar Sir's Classes graphic detected automatically! Adjust sliders if needed.");
     } else {
       // Fallback defaults
       setCropParams({

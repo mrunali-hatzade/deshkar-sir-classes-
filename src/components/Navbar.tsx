@@ -19,7 +19,7 @@ export default function Navbar() {
         <Link href="/" className={styles.logo}>
           <span className={styles.logoIcon}>🎓</span>
           <div className={styles.logoText}>
-            <span className={styles.logoName}>United Classes</span>
+            <span className={styles.logoName}>Deshkar Sir&apos;s Classes</span>
             <span className={styles.logoTagline}>Excellence in Education</span>
           </div>
         </Link>

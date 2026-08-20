@@ -3,6 +3,29 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 
+const PARTICLES = [
+  { left: '5%', delay: '0.2s', duration: '4.5s' },
+  { left: '12%', delay: '1.5s', duration: '6s' },
+  { left: '20%', delay: '3s', duration: '5s' },
+  { left: '28%', delay: '0.8s', duration: '3.8s' },
+  { left: '35%', delay: '2.1s', duration: '6.5s' },
+  { left: '42%', delay: '4s', duration: '4.2s' },
+  { left: '50%', delay: '1.2s', duration: '5.5s' },
+  { left: '58%', delay: '3.4s', duration: '3.5s' },
+  { left: '65%', delay: '0.5s', duration: '6.2s' },
+  { left: '72%', delay: '2.7s', duration: '4.8s' },
+  { left: '80%', delay: '1.8s', duration: '5.2s' },
+  { left: '88%', delay: '3.9s', duration: '4s' },
+  { left: '95%', delay: '0.9s', duration: '6.8s' },
+  { left: '15%', delay: '2.5s', duration: '5.8s' },
+  { left: '30%', delay: '4.2s', duration: '3.9s' },
+  { left: '48%', delay: '0.4s', duration: '6.1s' },
+  { left: '62%', delay: '1.9s', duration: '4.6s' },
+  { left: '76%', delay: '3.1s', duration: '5.4s' },
+  { left: '84%', delay: '2.3s', duration: '6.3s' },
+  { left: '92%', delay: '4.7s', duration: '3.7s' },
+];
+
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -29,18 +52,18 @@ export default function Hero() {
       <div className={styles.bgOverlay}></div>
       <Image
         src="/images/hero-banner.png"
-        alt="United Classes Coaching"
+        alt="Deshkar Sir's Classes"
         fill
         priority
         className={styles.bgImage}
         style={{ objectFit: 'cover' }}
       />
       <div className={styles.particles}>
-        {[...Array(20)].map((_, i) => (
+        {PARTICLES.map((p, i) => (
           <div key={i} className={styles.particle} style={{
-            left: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 5}s`,
-            animationDuration: `${3 + Math.random() * 4}s`,
+            left: p.left,
+            animationDelay: p.delay,
+            animationDuration: p.duration,
           }}></div>
         ))}
       </div>
@@ -50,7 +73,7 @@ export default function Hero() {
         </div>
         <h1 className={styles.title} data-animate>
           Shape Your <span className={styles.highlight}>Future</span> with<br />
-          <span className={styles.highlight2}>United Classes</span>
+          <span className={styles.highlight2}>Deshkar Sir&apos;s Classes</span>
         </h1>
         <p className={styles.subtitle} data-animate>
           Premier coaching for IIT-JEE &amp; NEET Physics. Learn directly from the master,
