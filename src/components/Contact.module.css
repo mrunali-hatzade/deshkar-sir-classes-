@@ -225,6 +225,60 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+.mapSection {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.mapSection:hover {
+  border-color: rgba(255, 215, 0, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.mapTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem;
+}
+
+.mapWrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mapWrapper iframe {
+  display: block;
+  width: 100%;
+}
+
+.directionsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+  color: #0a0f1e;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.directionsBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+}
+
 .visible[data-animate] {
   opacity: 1 !important;
   transform: translate(0) !important;

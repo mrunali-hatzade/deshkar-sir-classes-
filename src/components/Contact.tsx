@@ -91,6 +91,30 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+
+            <div className={styles.mapSection}>
+              <h4 className={styles.mapTitle}>📍 Find Us on Map</h4>
+              <div className={styles.mapWrapper}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.8!2d79.65!3d21.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBhandara%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692000000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0, borderRadius: '16px' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Deshkar Sir's Classes Location - Bhandara"
+                ></iframe>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/Deshkar+Sir+Classes+Bhandara+Maharashtra"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.directionsBtn}
+              >
+                🗺️ Get Directions
+              </a>
+            </div>
           </div>
 
           <div className={styles.formCol} data-animate>
