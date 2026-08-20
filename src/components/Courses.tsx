@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import Tilt from 'react-parallax-tilt';
+
 import styles from './Courses.module.css';
 
 export default function Courses() {
@@ -79,45 +79,35 @@ export default function Courses() {
 
         <div className={styles.grid}>
           {courses.map((course, i) => (
-            <div key={i} data-animate style={{ transitionDelay: `${i * 0.1}s` }}>
-              <Tilt
-                tiltMaxAngleX={8}
-                tiltMaxAngleY={8}
-                perspective={1000}
-                scale={1.02}
-                transitionSpeed={1500}
-                glareEnable={true}
-                glareMaxOpacity={0.15}
-                glareColor="#ffffff"
-                glarePosition="all"
-                glareBorderRadius="20px"
-              >
-                <div className={styles.card}>
-                  <div className={styles.cardGlow} style={{ background: `radial-gradient(circle at top right, ${course.color}15, transparent 70%)` }}></div>
-                  <div className={styles.cardTop}>
-                    <span className={styles.cardIcon} style={{ background: `${course.color}18` }}>{course.icon}</span>
-                    <span className={styles.cardTag} style={{ background: `${course.color}20`, color: course.color }}>{course.tag}</span>
-                  </div>
-                  <h3 className={styles.cardTitle}>{course.title}</h3>
-                  <div className={styles.cardPriceContainer}>
-                    <span className={styles.cardPrice} style={{ color: course.color }}>{course.price}</span>
-                    <span className={styles.cardPricePeriod}>{course.pricePeriod}</span>
-                  </div>
-                  <div className={styles.cardMeta}>
-                    <span>⏱ {course.duration}</span>
-                    <span>📖 {course.classes}</span>
-                  </div>
-                  <p className={styles.cardDesc}>{course.desc}</p>
-                  <ul className={styles.cardFeatures}>
-                    {course.features.map((f, j) => (
-                      <li key={j}><span className={styles.check}>✓</span> {f}</li>
-                    ))}
-                  </ul>
-                  <a href="#contact" className={styles.cardBtn} style={{ background: `linear-gradient(135deg, ${course.color}, ${course.color}cc)` }}>
-                    Learn More →
-                  </a>
-                </div>
-              </Tilt>
+            <div 
+              key={i} 
+              className={styles.card} 
+              data-animate 
+              style={{ transitionDelay: `${i * 0.1}s` }}
+            >
+              <div className={styles.cardGlow} style={{ background: `radial-gradient(circle at top right, ${course.color}15, transparent 70%)` }}></div>
+              <div className={styles.cardTop}>
+                <span className={styles.cardIcon} style={{ background: `${course.color}18` }}>{course.icon}</span>
+                <span className={styles.cardTag} style={{ background: `${course.color}20`, color: '#1a1a2e' }}>{course.tag}</span>
+              </div>
+              <h3 className={styles.cardTitle}>{course.title}</h3>
+              <div className={styles.cardPriceContainer}>
+                <span className={styles.cardPrice} style={{ color: '#e65100' }}>{course.price}</span>
+                <span className={styles.cardPricePeriod}>{course.pricePeriod}</span>
+              </div>
+              <div className={styles.cardMeta}>
+                <span>⏱ {course.duration}</span>
+                <span>📖 {course.classes}</span>
+              </div>
+              <p className={styles.cardDesc}>{course.desc}</p>
+              <ul className={styles.cardFeatures}>
+                {course.features.map((f, j) => (
+                  <li key={j}><span className={styles.check}>✓</span> {f}</li>
+                ))}
+              </ul>
+              <a href="#contact" className={styles.cardBtn} style={{ background: `linear-gradient(135deg, #0056b3, #004494)` }}>
+                Learn More →
+              </a>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import Tilt from 'react-parallax-tilt';
+
 import styles from './Results.module.css';
 
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
@@ -96,33 +96,23 @@ export default function Results() {
 
         <div className={styles.toppersGrid}>
           {toppers.map((topper, i) => (
-            <div key={i} data-animate style={{ transitionDelay: `${i * 0.1}s` }}>
-              <Tilt
-                tiltMaxAngleX={10}
-                tiltMaxAngleY={10}
-                perspective={800}
-                scale={1.03}
-                transitionSpeed={1000}
-                glareEnable={true}
-                glareMaxOpacity={0.2}
-                glareColor="#ffd700"
-                glarePosition="all"
-                glareBorderRadius="16px"
-              >
-                <div className={styles.topperCard}>
-                  <div className={styles.topperAvatar}>
-                    {topper.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                  <div className={styles.topperInfo}>
-                    <h4>{topper.name}</h4>
-                    <span className={styles.topperExam}>{topper.exam}</span>
-                  </div>
-                  <div className={styles.topperRank}>
-                    <span className={styles.rankValue}>{topper.rank}</span>
-                    <span className={styles.rankScore}>{topper.score}</span>
-                  </div>
-                </div>
-              </Tilt>
+            <div 
+              key={i} 
+              className={styles.topperCard}
+              data-animate
+              style={{ transitionDelay: `${i * 0.1}s` }}
+            >
+              <div className={styles.topperAvatar}>
+                {topper.name.split(' ').map(n => n[0]).join('')}
+              </div>
+              <div className={styles.topperInfo}>
+                <h4>{topper.name}</h4>
+                <span className={styles.topperExam}>{topper.exam}</span>
+              </div>
+              <div className={styles.topperRank}>
+                <span className={styles.rankValue}>{topper.rank}</span>
+                <span className={styles.rankScore}>{topper.score}</span>
+              </div>
             </div>
           ))}
         </div>
