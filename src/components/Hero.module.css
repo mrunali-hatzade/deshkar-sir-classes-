@@ -59,6 +59,31 @@
   }
 }
 
+.atomWrapper {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .atomWrapper {
+    right: -10%;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .atomWrapper {
+    right: -20%;
+    top: 60%;
+    opacity: 0.2;
+  }
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;

@@ -1,0 +1,72 @@
+.atomContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: rotateAtom 20s linear infinite;
+  z-index: 10;
+}
+
+.nucleus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #ff8c00, #ffd700);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+.orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 191, 255, 0.25);
+  transform-style: preserve-3d;
+}
+
+.orbit1 { transform: rotateY(60deg) rotateX(20deg); animation: spin1 5s linear infinite; }
+.orbit2 { transform: rotateY(120deg) rotateX(20deg); animation: spin2 6s linear infinite; }
+.orbit3 { transform: rotateY(180deg) rotateX(20deg); animation: spin3 7s linear infinite; }
+
+.electron {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #00bfff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00bfff, 0 0 10px white;
+  transform: translateX(-50%);
+}
+
+@keyframes rotateAtom {
+  0% { transform: perspective(1000px) rotateX(15deg) rotateY(0deg); }
+  100% { transform: perspective(1000px) rotateX(15deg) rotateY(360deg); }
+}
+
+@keyframes spin1 { 0% { transform: rotateY(60deg) rotateX(20deg) rotateZ(0deg); } 100% { transform: rotateY(60deg) rotateX(20deg) rotateZ(360deg); } }
+@keyframes spin2 { 0% { transform: rotateY(120deg) rotateX(20deg) rotateZ(0deg); } 100% { transform: rotateY(120deg) rotateX(20deg) rotateZ(360deg); } }
+@keyframes spin3 { 0% { transform: rotateY(180deg) rotateX(20deg) rotateZ(0deg); } 100% { transform: rotateY(180deg) rotateX(20deg) rotateZ(360deg); } }
+
+@media (max-width: 768px) {
+  .atomContainer {
+    width: 250px;
+    height: 250px;
+  }
+  .nucleus {
+    width: 35px;
+    height: 35px;
+  }
+  .electron {
+    width: 12px;
+    height: 12px;
+    top: -6px;
+  }
+}

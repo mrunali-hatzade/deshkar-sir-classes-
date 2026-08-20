@@ -3,6 +3,8 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 
+import Atom3D from './Atom3D';
+
 const PARTICLES = [
   { left: '5%', delay: '0.2s', duration: '4.5s' },
   { left: '12%', delay: '1.5s', duration: '6s' },
@@ -66,6 +68,9 @@ export default function Hero() {
             animationDuration: p.duration,
           }}></div>
         ))}
+      </div>
+      <div className={styles.atomWrapper}>
+        <Atom3D />
       </div>
       <div className={styles.container}>
         <div className={styles.badge} data-animate>
